@@ -5,9 +5,9 @@ ENDCOLOR="\e[0m"
 clear
 echo -e "${GREEN}Installing Proxy...${ENDCOLOR}"
 sleep 1
-if [ -f "arunika" ]; then
+if [ -f "ditya" ]; then
     echo -e "${RED}Deleting old proxy...${ENDCOLOR}"
-    rm arunika
+    rm ditya
     sleep 1
     echo -e "${GREEN}Updating proxy...${ENDCOLOR}"
 fi
@@ -19,8 +19,8 @@ pkg install curl
 pkg install libenet
 pkg install wget
 clear
-wget -q https://github.com/AmertaByte/Arunika-Proxy/raw/main/arunika
+wget -q https://github.com/TehJawir/DityaProxy/raw/main/ditya
 sleep 1
 echo -e "${GREEN}Proxy Installed${ENDCOLOR}"
-echo -e "${GREEN}Execute proxy with this command: ./arunika${ENDCOLOR}"
-chmod +x arunika
+echo -e "${GREEN}Execute proxy with this command: ./ditya${ENDCOLOR}"
+chmod +x ditya
